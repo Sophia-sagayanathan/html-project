@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercise14-part-2</title>
+        <style>
+            body{
+                height:3000px;
+            }
+            .right-sidebar{
+            background-color: green;
+            color:white;
+            position:fixed;
+            right:0;
+            bottom:0;
+            top:0;
+            width:100px;
+        }
+        .overlay{
+            position:fixed;
+            right:0;
+            left:0;
+            bottom:0;
+            top:0;
+            background-color: rgba(0,0,0,0.8);
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .modal{
+            background-color: white;
+            padding-top:15px;
+            padding-bottom:15px;
+            padding-left: 15px;
+            padding-right:15px;
+            width:300px;
+            border-radius: 5px;
+        }
+        .line-1{
+            font-family:Arial;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        .line-2{
+            font-family: Arial;
+            margin-bottom: 12px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="right-sidebar">
+            right sidebar
+        </div>
+        <div class="overlay">
+            <div class="modal">
+                <div class="line-1">
+                    Modal title
+                </div>
+                <div class="line-2">
+                    This is a modal
+                </div>
+                <button>Close</button>
+            </div>
+        </div>
+    </body>
+</html>

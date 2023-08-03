@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercise14-part-3</title>
+    <style>
+/* 1 */
+        body{
+            height: 3000px;
+            padding-top:50px;
+            
+        }
+        .header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .left-section{
+            display:flex;
+            align-items: center;
+        }
+        .right-section{
+            display:flex;
+            align-items: center;
+            
+        }
+        .picture{
+            height:40px;
+            width:40px;
+            object-fit:cover;
+            border-radius: 20px;
+            margin-right:10px;
+        }
+        .name{
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .blue-button{
+            font-family: Arial;
+            font-weight: bold;
+            color:white;
+            background-color: rgb(24, 119, 242);
+            border:none;
+            border-radius: 6px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right:12px;
+            padding-left:12px;
+            margin-right: 3px;
+        }
+        .message-button{
+            font-family: Arial;
+            font-weight: bold;
+            background-color: rgb(230,230,230);
+            border:none;
+            border-radius: 6px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right:12px;
+            padding-left:12px;
+        }
+/* 2 */
+        .picture{
+            width:60px;
+            height:60px;
+            object-fit:cover;
+            margin-bottom: 10px;
+            border-radius:30px;
+        }
+        .sidebar-1{
+            position:fixed;
+            left:0px;
+            bottom:0px;
+            top:80px;
+            padding-top:10px;
+            padding-right:10px;
+            padding-left:10px;
+            background-color: rgb(33,33,33);
+        }
+        .sidebar-2{
+            background-color: rgb(55, 55, 55);
+            position: fixed;
+            left: 80px;
+            top: 80px;
+            bottom: 0;
+            width: 150px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .div1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .info{
+            color: white;
+            font-size: 14px;
+            font-family: Arial;
+        }
+        .plus{
+            color: rgb(150, 150, 150);
+            font-size: 25px;
+            font-family: Arial;
+        }
+        .channel{
+            font-family: Arial;
+            color: rgb(150, 150, 150);
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+<!-- 1 -->
+    <div class="header">
+        <div class="left-section">
+            <img class="picture" src="pictures/dog2.jpg">
+            <div class="name">SOPHIA</div>
+        </div>
+        <div class="right-section">
+            <button  class="blue-button">Add Friend</button>
+            <button class="message-button">Message</button>
+        </div>
+    </div>
+ <!-- 2 -->
+    <div class="sidebar-1">
+        <div>
+            <img class="picture" src="pictures/dog-image.jpg">
+        </div>
+        <div>
+            <img class="picture" src="pictures/dog2.jpg">
+        </div>
+        <div>
+            <img class="picture" src="pictures/fox.jpg">
+        </div>
+    </div>
+    <div class="sidebar-2">
+        <div class="div1">
+            <div class="info">INFO</div>
+            <div class="plus">+</div>
+        </div>
+        <div class="channel"># new-videos</div>
+        <div class="channel"># updates</div>
+        <div class="channel"># faq</div>
+    </div>
+</body>
+</html>
